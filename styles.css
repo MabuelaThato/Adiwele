@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    overflow: hidden;
 }
 
 #typing-heading {
@@ -43,3 +42,23 @@ body {
         transform: translateX(-100%); /* Adjust the percentage based on the number of images */
     }
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px;
+  }
+  
+  
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
