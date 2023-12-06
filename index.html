@@ -5,74 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moving Images</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/mg-dalenaf" rel="stylesheet">
+                
+
 </head>
 <body>
 
-    <!--Heading-->
-    <div id="typing-heading">
-        <span id="cursor"></span>
-        <h1></h1>
-    </div>
+   <div class="hero">
+        <!--Heading-->
+        <h1>Adiwele</h1>
 
-    <!--Tagline-->
-    <p>Delivering Quality On Time</p>
+        <!--Tagline-->
+        <div id="tagline" class="center">
+            <span id="cursor"></span>
+            <p></p>
+        </div>
+        
+        <button class="btn">Get Quote</button>
+    </div>
 
     <!--Carousel-->
-<div id="carousel-container">
-    <div id="image-carousel">
-        <img class="carousel-image" src="image1.jpg" alt="Image 1">
-        <img class="carousel-image" src="image2.jpg" alt="Image 2">
-        <img class="carousel-image" src="image3.jpg" alt="Image 3">
-        
-    </div>
-</div>
-
-<!--About section-->
-<h1>About us</h1>
-<p>At <span>Adiwele</span>, we take pride in delivering top-notch products to 
-    businesses across various industries. 
-    Whether you're in need of heaters, stationary, tires, or any other 
-    items your business needs, we've got you covered.
-</p>
-
-<!--Services-->
-<div class="grid-container">
-    <div class="card">
-        <img src="img_avatar.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Business Supplies</b></h4>
-          <p>We specialize in providing a wide range of products to meet the diverse needs of businesses. 
-            From office essentials to industrial equipment, 
-            we ensure that our clients receive quality items delivered on time, every time.
-            </p>
+    <div id="carousel-container">
+        <div id="image-carousel">
+            <img class="carousel-image" src="src/chair.png" alt="Image 1">
+            <img class="carousel-image" src="src/cleaning-products.png" alt="Image 2">
+            <img class="carousel-image" src="src/cosmetics.png" alt="Image 3">
+            <img class="carousel-image" src="src/desk-chair.png" alt="Image 4">
+            <img class="carousel-image" src="src/first-aid-kit.png" alt="Image 5">
+            <img class="carousel-image" src="src/food-donation.png" alt="Image 6">
+            <img class="carousel-image" src="src/kitchenware.png" alt="Image 7">
+            <img class="carousel-image" src="src/laptop.png" alt="Image 8">
+            <img class="carousel-image" src="src/microwave.png" alt="Image 9">
+            <img class="carousel-image" src="src/printer.png" alt="Image 10">
+            <img class="carousel-image" src="src/tools.png" alt="Image 12">
+            <img class="carousel-image" src="src/tyre.png" alt="Image 13">
+            <img class="carousel-image" src="src/watch-tv.png" alt="Image 14">
+            <img class="carousel-image" src="src/wifi-router.png" alt="Image 15">
         </div>
     </div>
-    <div class="card">
-        <img src="img_avatar.png" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Timely Deliveries</b></h4>
-          <p>Punctuality is our priority. 
-            We understand the importance of timely deliveries to keep your operations running smoothly. 
-            Rest assured, our dedicated team works diligently to ensure your orders reach you when you need them.
-        </p>
+
+<div class="content">
+    <!--About section-->
+<div class="about">
+    <h2 class="heading">About us</h2>
+    <p>At <span>Adiwele</span>, we take pride in delivering top-notch products to 
+        businesses across various industries. 
+        Whether you're in need of heaters, stationary, tires, or any other 
+        items your business needs, we've got you covered.
+    </p>
+</div>
+
+<!--Services-->
+<div class="services">
+    <h2 class="heading">Our services</h2>
+    <div class="flex-container">
+        <div class="card">
+            <img src="src/supply.jpg" alt="Avatar" class="service-image">
+            <div class="container">
+            <h2 class="sub-heading"><b>Business Supplies</b></h2>
+            <p>We specialize in providing a wide range of products to meet the diverse needs of businesses. 
+                From office essentials to industrial equipment, 
+                we ensure that our clients receive quality items delivered on time, every time.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="src/on-time.jpg" alt="Avatar" class="service-image">
+            <div class="container">
+                <h2 class="sub-heading"><b>Timely Deliveries</b></h2>
+                <p>Punctuality is our priority. 
+                    We understand the importance of timely deliveries to keep your operations running smoothly. 
+                    Rest assured, our dedicated team works diligently to ensure your orders reach you when you need them.
+                </p>
+            </div>
         </div>
     </div>
 </div>
 
 <!--Contact-->
-<form action="">
+<div>
+    <h2 class="heading center">Message us</h2>
+    <div class="form">
+        <form action="">
 
-    <label for="fname">Full Name</label><br>
-    <input type="text" id="fullname" name="fullname" value="fullname"><br>
-
-    <label for="lname">Email or Cell number</label><br>
-    <input type="text" id="contact" name="contact" value="contact"><br><br>
-
-    <label for="lname">Message</label><br>
-    <input type="text" id="message" name="message" value="message"><br><br>
-
-    <button type="button">Sumbit query</button>
-  </form>
+            <label for="fname">Full Name</label>
+            <br>
+            <input type="text" id="fullname" name="fullname" value="fullname">
+            <br>
+            <br>
+        
+            <label for="lname">Email or Cell number</label>
+            <br>
+            <input type="text" id="contact" name="contact" value="contact">
+            <br>
+            <br>
+        
+            <label for="lname">Message</label><br>
+            <input type="text" id="message" name="message" value="message">
+            <br>
+            <br>
+        
+            <button type="button">Sumbit query</button>
+          </form>
+    </div>
+    </div>
+</div>
 
 <script src="scripts.js"></script>
 </body>
