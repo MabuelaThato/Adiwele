@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moving Images</title>
+    <title>Adiwele</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,105 +14,96 @@
 
 </head>
 <body>
+   <div class="bg-[#36517C]">
 
-   <div class="hero">
-        <!--Heading-->
-        <h1>Adiwele</h1>
+    <!--Navbar-->
+    <nav class="w-full text-white">  
+            <div class="p-5 px-6 lg:px-12 items-center flex justify-between">
+                <div class="">
+                  <img src="src/logo.jpg" alt="" class='w-48' /> 
+                </div>
+                <div class='flex flex-cols-3 gap-9 md:gap-6 lg:gap-9 mr-4 md:mr-8 lg:mr-10 font-semibold text-xl'>
+                    <a href="/#services" class='hover:underline'>Services</a>
+                    <a href="/#contact" class='hover:underline'>Contact</a>
+                  
+                </div>
+            </div>
+    </nav>
+
+
+   <div class="text-center p-20 text-white">
+        <div >
+            <!--Heading-->
+        <div class="mb-20">
+            <h1 class="text-6xl font-black mx-40">Supplying quality goods for every need</h1>
 
         <!--Tagline-->
         <div id="tagline" class="center">
             <span id="cursor"></span>
             <p></p>
         </div>
+        </div>
         
-        <button class="btn">Get Quote</button>
-    </div>
-
-    <!--Carousel-->
-    <div id="carousel-container">
-        <div id="image-carousel">
-            <img class="carousel-image" src="src/chair.png" alt="Image 1">
-            <img class="carousel-image" src="src/cleaning-products.png" alt="Image 2">
-            <img class="carousel-image" src="src/cosmetics.png" alt="Image 3">
-            <img class="carousel-image" src="src/desk-chair.png" alt="Image 4">
-            <img class="carousel-image" src="src/first-aid-kit.png" alt="Image 5">
-            <img class="carousel-image" src="src/food-donation.png" alt="Image 6">
-            <img class="carousel-image" src="src/kitchenware.png" alt="Image 7">
-            <img class="carousel-image" src="src/laptop.png" alt="Image 8">
-            <img class="carousel-image" src="src/microwave.png" alt="Image 9">
-            <img class="carousel-image" src="src/printer.png" alt="Image 10">
-            <img class="carousel-image" src="src/tools.png" alt="Image 12">
-            <img class="carousel-image" src="src/tyre.png" alt="Image 13">
-            <img class="carousel-image" src="src/watch-tv.png" alt="Image 14">
-            <img class="carousel-image" src="src/wifi-router.png" alt="Image 15">
+        <button class="bg-[#ef9e0a] hover:bg-[#E58C06] rounded-full p-4 font-semibold px-6">
+            <a href="/#contact">Get in Touch</a>
+        </button>
         </div>
     </div>
+   </div>
 
-<div class="content">
+<div class="content mt-20">
     <!--About section-->
-<div class="about">
-    <h2 class="heading">About us</h2>
-    <p>At <span>Adiwele</span>, we take pride in delivering top-notch products to 
+<div class="mb-20 mx-20">
+    <h2 class="heading text-4xl font-black text-[#36517C]">About us</h2>
+   <div class="grid grid-cols-2 space-x-28">
+    <p class="self-center">At <span>Adiwele</span>, we take pride in delivering top-notch products to 
         businesses across various industries. 
         Whether you're in need of heaters, stationary, tires, or any other 
         items your business needs, we've got you covered.
+        <br>
+        Are you interested? <a href="/#contact">Contact us</a>
     </p>
+    <div>
+        <img src="src/about-img.png" alt="" class="w-96">
+    </div>
+   </div>
 </div>
 
 <!--Services-->
-<div class="services">
-    <h2 class="heading">Our services</h2>
-    <div class="flex-container">
-        <div class="card">
-            <img src="src/supply.jpg" alt="Avatar" class="service-image">
-            <div class="container">
-            <h2 class="sub-heading"><b>Business Supplies</b></h2>
-            <p>We specialize in providing a wide range of products to meet the diverse needs of businesses. 
-                From office essentials to industrial equipment, 
-                we ensure that our clients receive quality items delivered on time, every time.
+<div class="bg-[#F3F5FA] p-20">
+    <h2 class="heading text-4xl font-black text-[#36517C] mb-12">Our services</h2>
+    <div class="grid grid-rows-2">
+        <div>
+            <span class="p-2 px-3 bg-[#36517C] text-white rounded-full"><b>Business Supplies</b></span>
+            <div class="flex space-x-8 mt-4">
+                <img src="src/supplies.png" alt="Avatar" class="w-32 shadow-md p-1 rounded-full">
+                <div class="">
+                <p class="mt-8">We specialise in providing a wide range of products to meet the diverse needs of businesses. 
+                    From office essentials to industrial equipment, 
+                    we ensure that our clients receive quality items delivered on time, every time.
                 </p>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img src="src/on-time.jpg" alt="Avatar" class="service-image">
-            <div class="container">
-                <h2 class="sub-heading"><b>Timely Deliveries</b></h2>
-                <p>Punctuality is our priority. 
+
+        <div class="mt-6">
+            <span class="p-2 px-3 bg-[#36517C] text-white rounded-full"><b>Timely Deliveries</b></span>
+        <div class="flex space-x-8 mt-4">
+            <img src="src/time.png" alt="Avatar" class="w-32 shadow-md p-1 rounded-full">
+            <div class="">
+                <p class="mt-8">Punctuality is our priority. 
                     We understand the importance of timely deliveries to keep your operations running smoothly. 
                     Rest assured, our dedicated team works diligently to ensure your orders reach you when you need them.
                 </p>
             </div>
+        </div>
         </div>
     </div>
 </div>
 
 <!--Contact-->
 <div>
-    <h2 class="heading center">Message us</h2>
-    <div class="form">
-        <form action="">
-
-            <label for="fname">Full Name</label>
-            <br>
-            <input type="text" id="fullname" name="fullname" value="fullname">
-            <br>
-            <br>
-        
-            <label for="lname">Email or Cell number</label>
-            <br>
-            <input type="text" id="contact" name="contact" value="contact">
-            <br>
-            <br>
-        
-            <label for="lname">Message</label><br>
-            <input type="text" id="message" name="message" value="message">
-            <br>
-            <br>
-        
-            <button type="button">Sumbit query</button>
-          </form>
-    </div>
-    </div>
+    
 </div>
 
 <script src="scripts.js"></script>
