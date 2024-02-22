@@ -1,9 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body{
     font-family: "Jost", sans-serif;
+    scroll-behavior: smooth;
 }
 
 #tagline {
@@ -13,16 +11,30 @@ body{
     font-weight: 600;
     color: #AFB9CB;
     display: inline-block;
-    width: 100vw;/* Adjust the width as needed */
     height: 70px;
     margin: 0;
 }
 
 #cursor {
     border-right: 2px solid #333;
-    vertical-align: middle; 
+    vertical-align: right; 
+    
 }
 .service-image{
     border-radius: 50%;
     width: 50px;
 }
+
+.slide {
+    animation: 3s infinite alternate slidein;
+  }
+
+  @media (max-width: 768px) {
+    #tagline{
+        white-space: wrap;
+        height: 100px;
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    
+  }

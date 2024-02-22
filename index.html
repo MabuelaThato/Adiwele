@@ -13,16 +13,16 @@
                 
 
 </head>
-<body>
+<body class="max-w-screen w-full flex flex-col">
    <div class="bg-[#36517C]">
 
     <!--Navbar-->
     <nav class="w-full text-white">  
             <div class="p-5 px-6 lg:px-12 items-center flex justify-between">
                 <div class="">
-                  <img src="src/logo.jpg" alt="" class='w-48' /> 
+                  <img src="src/logo.jpg" alt="" class='w-24 md:w-48' /> 
                 </div>
-                <div class='flex flex-cols-3 gap-9 md:gap-6 lg:gap-9 mr-4 md:mr-8 lg:mr-10 font-semibold text-xl'>
+                <div class='flex flex-cols-3 gap-9 md:gap-6 lg:gap-9 mr-4 md:mr-8 lg:mr-10 font-semibold text-sm md:text-xl'>
                     <a href="/#services" class='hover:underline'>Services</a>
                     <a href="/#contact" class='hover:underline'>Contact</a>
                   
@@ -31,52 +31,54 @@
     </nav>
 
 
-   <div class="text-center p-20 text-white">
+   <div class="text-center p-8 md:p-20 text-white">
         <div >
             <!--Heading-->
-        <div class="mb-20">
-            <h1 class="text-6xl font-black mx-40">Supplying quality goods for every need</h1>
+            <div class="mb-4 md:mb-12 lg:mb-20">
+                <h1 class="text-3xl md:text-4xl lg:text-6xl font-black md:mx-20 lg:mx-32">Supplying quality goods for every need</h1>
 
-        <!--Tagline-->
-        <div id="tagline" class="center">
-            <span id="cursor"></span>
-            <p></p>
-        </div>
-        </div>
-        
-        <button class="bg-[#ef9e0a] hover:bg-[#E58C06] rounded-full p-4 font-semibold px-6">
-            <a href="/#contact">Get in Touch</a>
-        </button>
+            <!--Tagline-->
+                <div id="tagline" class="center text-center">
+                    <span id="cursor" class="text-left"></span>
+                    <p></p>
+                </div>
+            </div>
+            
+            <button class="mb-4 bg-[#ef9e0a] hover:bg-[#E58C06] rounded-full p-2 md:p-4 font-semibold px-4 md:px-6 sm:text-sm md:text-base">
+                <a href="/#contact" >Get in Touch</a>
+            </button>
         </div>
     </div>
    </div>
 
-<div class="content mt-20">
+<div class="content mt-8 md:mt-20">
+
+
     <!--About section-->
-<div class="mb-20 mx-20">
-    <h2 class="heading text-4xl font-black text-[#36517C]">About us</h2>
-   <div class="grid grid-cols-2 space-x-28">
-    <p class="self-center">At <span>Adiwele</span>, we take pride in delivering top-notch products to 
-        businesses across various industries. 
-        Whether you're in need of heaters, stationary, tires, or any other 
-        items your business needs, we've got you covered.
-        <br>
-        Are you interested? <a href="/#contact">Contact us</a>
-    </p>
-    <div>
-        <img src="src/about-img.png" alt="" class="w-96">
-    </div>
+<div class="mb-8 lg:mb-0 mx-8 md:mx-20">
+    <h2 class="heading text-xl md:text-4xl lg:text-5xl font-black text-[#36517C] md:mb-8">About us</h2>
+    <div class="grid grid-rows-2 md:grid-cols-2 space-y-2 md:space-x-28">
+        <p class="self-center text-sm">At <span>Adiwele</span>, we take pride in delivering top-notch products to 
+            businesses across various industries. 
+            Whether you're in need of heaters, stationary, tires, or any other 
+            items your business needs, we've got you covered.
+            <br>
+            Are you interested? <a href="/#contact" class="underline">Contact us</a>
+        </p>
+        <div>
+            <img src="src/about-img.png" alt="" class="w-64 md:w-96 mx-auto">
+        </div>
    </div>
 </div>
 
 <!--Services-->
-<div class="bg-[#F3F5FA] p-20">
-    <h2 class="heading text-4xl font-black text-[#36517C] mb-12">Our services</h2>
+<div class="bg-[#eaecef] p-8 md:p-20">
+    <h2 class="text-xl md:text-4xl lg:text-5xl font-black text-[#36517C] mb-4 md:mb-12 lg:mb-18">Our services</h2>
     <div class="grid grid-rows-2">
         <div>
-            <span class="p-2 px-3 bg-[#36517C] text-white rounded-full"><b>Business Supplies</b></span>
-            <div class="flex space-x-8 mt-4">
-                <img src="src/supplies.png" alt="Avatar" class="w-32 shadow-md p-1 rounded-full">
+            <span class="p-1 md:p-2 px-3 bg-[#36517C] text-white rounded-full text-xs lg:text-base"><b>Business Supplies</b></span>
+            <div class="flex flex-col md:flex-row space-x-8 mt-4">
+                <img src="src/supplies.png" alt="Avatar" class="w-24 md:w-32 mx-auto shadow-md p-1 rounded-full">
                 <div class="">
                 <p class="mt-8">We specialise in providing a wide range of products to meet the diverse needs of businesses. 
                     From office essentials to industrial equipment, 
@@ -87,9 +89,9 @@
         </div>
 
         <div class="mt-6">
-            <span class="p-2 px-3 bg-[#36517C] text-white rounded-full"><b>Timely Deliveries</b></span>
-        <div class="flex space-x-8 mt-4">
-            <img src="src/time.png" alt="Avatar" class="w-32 shadow-md p-1 rounded-full">
+            <span class="p-1 md:p-2 px-3 bg-[#36517C] text-white rounded-full text-xs lg:text-base"><b>Timely Deliveries</b></span>
+        <div class="flex flex-col md:flex-row space-x-8 mt-4">
+            <img src="src/time.png" alt="Avatar" class="w-24 md:w-32 mx-auto shadow-md p-1 rounded-full">
             <div class="">
                 <p class="mt-8">Punctuality is our priority. 
                     We understand the importance of timely deliveries to keep your operations running smoothly. 
@@ -102,7 +104,19 @@
 </div>
 
 <!--Contact-->
-<div>
+<div class="bg-[#36517C] w-full px-12 py-10">
+    <div class="flex flex-col md:flex-row space-y-4 md:space-x-12  justify-center items-center text-white">
+
+        <div class="flex items-center space-x-2">
+            <img src="src/phone.png" alt="phone-icon" class="w-6">
+            <span>+27 79 949 9311</span>
+        </div>
+        <div class="flex items-center space-x-2">
+            <img src="src/mail.png" alt="email-icon" class="w-6">
+            <span><a href="mailto:adiwelegroup@gmail.com" >Adiwelegroup@gmail.com</a></span>
+        </div>
+
+    </div>
     
 </div>
 
